@@ -1,2 +1,43 @@
+# --- Binaries & OS Specific ---
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
 
+# Test binaries
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Mac/Windows system files
+.DS_Store
+Thumbs.db
+
+# --- Secrets (CRITICAL) ---
 .env
+.env.local
+.env.development
+.env.test
+.env.production
+# Block any file ending in .env just to be safe
+*.env
+
+# --- IDE & Editor ---
+# VS Code
+.vscode/
+
+# IntelliJ / GoLand
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Vim
+*.swp
+
+# --- Go Modules ---
+# (Usually we KEEP go.sum, but if you use a 'vendor' folder and don't want to push it, uncomment below)
+# vendor/

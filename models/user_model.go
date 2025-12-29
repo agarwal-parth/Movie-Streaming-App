@@ -32,5 +32,7 @@ type UserResponse struct {
 	LastName        string  `json:"last_name"`
 	Email           string  `json:"email"`
 	Role            string  `json:"role"`
+	Token           string  `json:"token"` // this is add for now will use cookies later.
+	RefreshToken    string  `json:"refresh_token"`
 	FavouriteGenres []Genre `json:"favourite_genres"`
 }
